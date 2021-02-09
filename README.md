@@ -11,21 +11,21 @@ The game doesn't have an AI, it realizes the logic of the Tic-Tac-Toe. symbol ca
 
 ## **Files**
 1. app.py
-
+```
 It contains Tic-Tac-Toe main object and all the methods within it. 
-
+```
 2. requirements.py
-
+```
 It records all the dependencies
-
+```
 3. test_game.py
-
+```
 It is used for conducting unittest
-
+```
 4. Log
-
+```
 It contains the running progress log of this game
-
+```
 ## **Functions**
 1.  **def choose_game_mode(self,symbol = None)**
 ```
