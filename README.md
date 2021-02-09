@@ -11,10 +11,10 @@ The game doesn't have an AI, it realizes the logic of the Tic-Tac-Toe. symbol ca
 
 ## **Functions**
 1.  def choose_game_mode(self,symbol = None)
-
+```
 The func helps the player input who is the first according to given mode, otherwise it would be random
 para:
-
+```
 @symbol: the symbol who is going to play first
 
 2.  def place_marker(self, symbol, row, column)
