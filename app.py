@@ -148,5 +148,6 @@ class TicTacToe:
         """
         If there is a need to print out the board, call this func
         """
+        
         for row in self.board:
             print(row)
