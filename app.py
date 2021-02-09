@@ -1,3 +1,7 @@
+"""
+Author: Kezheng Xiang
+"""
+
 from enum import Enum
 import logging
 from random import choice
