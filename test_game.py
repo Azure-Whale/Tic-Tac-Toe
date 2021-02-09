@@ -30,9 +30,9 @@ def test_row_win():
     assert game.current_statue == game.STATES.CROSS_WON
 
 
-def test_diagrame_win():
+def test_diagonal_win():
     """
-    Testing if a player can win when the player has three marker on same diagrame
+    Testing if a player can win when the player has three marker on same diagonal
     """
     game = TicTacToe()
     game.choose_game_mode('x')
