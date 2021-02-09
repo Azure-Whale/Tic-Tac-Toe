@@ -86,21 +86,23 @@ class TicTacToe:
         """Check conditions which may create a winner"""
         # check if the new marker forms a row having three same symbol
         def check_row():
+
             cnt = 0
             for i in range(3):
                 if self.board[i][column] == symbol:
                     cnt += 1
             return True if cnt == 3 else False
-        # check if the new marker forms a column having three same symbol
 
+        # check if the new marker forms a column having three same symbol
         def check_col():
+
             cnt = 0
             for i in range(3):
                 if self.board[row][i] == symbol:
                     cnt += 1
             return True if cnt == 3 else False
-        # check if the new marker forms a diagonal having three same symbol
 
+        # check if the new marker forms a diagonal having three same symbol
         def check_diagonal():
             cnt1 = cnt2 = 0
             row = list(range(3))
