@@ -60,7 +60,7 @@ def test_draw():
     game.place_marker('o', 1, 2)
     game.place_marker('x', 2, 2)
     game.place_marker('o', 2, 1)
-    assert game.current_statue == game.STATES.NAUGHT_TURN
+    assert game.current_statue == game.STATES.DRAW
 
 
 def test_game_mode():
