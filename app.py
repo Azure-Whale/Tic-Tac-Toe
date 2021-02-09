@@ -6,7 +6,8 @@ from enum import Enum
 import logging
 from random import choice
 
-logging.basicConfig(filename='Logs/game.log', level=logging.DEBUG)
+logging.basicConfig(handlers=[logging.FileHandler(
+    "Logs/game.log"), logging.StreamHandler()], level=logging.DEBUG)
 
 
 class TicTacToe:
@@ -18,10 +19,6 @@ class TicTacToe:
         NAUGHT_WON = 4
 
     def __init__(self):
-        # Customize the game setting
-        self.setting = {
-            'first': None,  # the first player will be decided by its value
-        }
         # init the game board, '_' marks the free place, 'o' marks the places hold by o, 'x' marks the places hold by x
         self.board = [['_' for row in range(3)] for col in range(3)]
         # init the game statue and max available places
@@ -36,14 +33,12 @@ class TicTacToe:
         @symbol: the symbol who is going to play first
         """
         if symbol == 'o':
-            self.setting['first'] = 'o'
             self.current_statue = self.STATES.NAUGHT_TURN
         elif symbol == 'x':
-            self.setting['first'] = 'x'
             self.current_statue = self.STATES.CROSS_TURN
         else:
-            self.setting['first'] = choice(['o', 'x'])
-            self.current_statue = self.choose_game_mode(self.setting['first'])
+            self.current_statue = self.choose_game_mode(choice(['o', 'x']))
+        return self.current_statue
 
     def place_marker(self, symbol, row, column):
         """
@@ -53,6 +48,11 @@ class TicTacToe:
         @row: the index of row of targe place
         @column: the index of column of targe place
         """
+        # if the given coordinate is invaild, prevent this operation
+        if not (0 <= row <= 2 and 0 <= column <= 2):
+            logging.warning(
+                'Invaild operation, the given coordinate is invaild.')
+            return
         # if the game is over, operation is invaild.
         if self.current_statue in {self.STATES.DRAW, self.STATES.CROSS_WON, self.STATES.NAUGHT_WON}:
             logging.warning('Invaild operation, the game is over.')
@@ -71,7 +71,7 @@ class TicTacToe:
             self.update_game('o', row, column)
         # if the player plays when it is not his/her turn, the operation is invaild
         else:
-            logging.warning('Invaild operation, the game is played in turns! Current player is {}'.format(
+            logging.warning('Invaild operation, the game is played in turns! Current statue is {}'.format(
                 self.current_statue))
             return
 
@@ -129,10 +129,10 @@ class TicTacToe:
             # if there still are available places, next plyaer will play
             elif self.current_statue == self.STATES.NAUGHT_TURN:
                 self.current_statue = self.STATES.CROSS_TURN
-                logging.info('Cross moves ')
+                logging.info('Naught moves ')
             else:
                 self.current_statue = self.STATES.NAUGHT_TURN
-                logging.info('Naught moves ')
+                logging.info('Cross moves ')
         # if there is a winner
         else:
             # player in current turn will win the game
@@ -148,6 +148,6 @@ class TicTacToe:
         """
         If there is a need to print out the board, call this func
         """
-        
+
         for row in self.board:
             print(row)
