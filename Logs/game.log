@@ -1,0 +1,41 @@
+INFO:root:Game Ready
+INFO:root:Game Over
+WARNING:root:Invaild operation, the place has been hold by o
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the place has been hold by o
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+WARNING:root:Invaild operation, the game is played in turns! Current player is STATES.NAUGHT_TURN
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+WARNING:root:Invaild operation, the game is over.
+WARNING:root:Invaild operation, the game is over.
+WARNING:root:Invaild operation, the game is over.
+WARNING:root:Invaild operation, the game is over.
+INFO:root:Game Ready
+INFO:root:Game Ready
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+INFO:root:Game Over, cross wins.. 
+INFO:root:Game Ready
+INFO:root:Cross moves 
+INFO:root:Naught moves 
+INFO:root:Cross moves 
+INFO:root:Naught moves 
+INFO:root:Game Over, cross wins.. 
