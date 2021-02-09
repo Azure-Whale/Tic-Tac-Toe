@@ -1,7 +1,6 @@
 # Tic-Tac-Toe
-It's a private assesment submission from Kezheng
 
-The game doesn't have an AI, it realizes the logic of the Tic-Tac-Toe. symbol can be "x" or "o", row and column can be an integer from 0 to 2. The empty place of board would be marked as "-". Once there are three same markers on any row, column or diagonal, one player would win the game, otherwise the game would draw or continue.
+It's a simple realization of Tic-Tac-Toe. Symbol can be "x" or "o", row and column can be an integer from 0 to 2. The empty place of board would be marked as "-". Once there are three same markers on any row, column or diagonal, one player would win the game, otherwise the game would draw or continue.
 
 
 ## **Local Development Setup**
