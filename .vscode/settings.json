@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/kazuo/Desktop/Github_projects/Tic-Tac-Toe/Tic-Tac-Toe/.env/bin/python3"
+    "python.pythonPath": "/Users/kazuo/Desktop/Github_projects/Tic-Tac-Toe/Tic-Tac-Toe/.env/bin/python3",
+    "python.formatting.provider": "autopep8"
 }
